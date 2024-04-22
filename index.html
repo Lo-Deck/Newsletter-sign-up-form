@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Frontend Mentor, Exercise Newsletter sign-up form with success message">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+      <link href="style.css" rel="stylesheet" type="text/css">
+      <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    </head>
+    <body>
+ 
+      <main class="container">
+
+        <picture class="image-container">
+          <source srcset="./images/illustration-sign-up-desktop.svg" media="(min-width: 70rem)">
+          <img class="illustration" src="./images/illustration-sign-up-mobile.svg" alt="">
+        </picture>
+    
+      
+        <div class="display-desktop">
+
+          <h1 class="title">Stay updated!</h1>
+          <p class="text">Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="list">
+            <li class="li-text">Product discovery and building what matters</li>
+            <li class="li-text">Measuring to ensure updates are a success</li>
+            <li class="li-text">And much more!</li>
+          </ul>
+
+          <form class="form-container" id="myForm" action="./index2.html" novalidate>
+            <fieldset>
+              <legend>Email address</legend>
+              <input class="emailAddress" type="email" id="email" name="email" placeholder="email@company.com" required> 
+              <span class="messError"></span>
+              <button class="button" id="button" type="submit" form="myForm">Subscribe to monthly newsletter</button>
+            </fieldset>
+          </form>
+
+        </div>
+
+      </main>
+
+    <script  src="./script.js"></script>
+
+    </body>
+
+</html>
